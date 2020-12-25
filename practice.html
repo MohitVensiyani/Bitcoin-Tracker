@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+     google.charts.load('current', {'packages':['corechart']});
+     google.charts.setOnLoadCallback(drawChart);
+
+     function drawChart() {
+       var data = google.visualization.arrayToDataTable([
+         ['Year', 'Data Set 1', 'Data Set 2'],
+         ['2004',  -80,      -40],
+         ['2005',  -20,      10],
+         ['2006',  -60,       0],
+         ['2007',  0,      -20],
+         ['2008',  20,       40],
+         ['2009',  40,       10],
+         ['2010',  0,       40],
+         ['2011',  80,       60],
+       ]);
+
+
+       var options = {
+         title: 'Real-time bitcoin graph',
+         curveType: 'function',
+         legend: { position: 'bottom' }
+       };
+
+       var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+       chart.draw(data, options);
+     }
+   </script>
+
+<style>
+
+
+</style>
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li>
+        <p id="rcorner">
+        <a href="#">
+          <span class="icon"><i class="fa fa-sun-o" aria-hidden="true"></i>
+</span>
+          <span class="title">ACADZA</span>
+        </a>
+      </p>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</span>
+          <span class="tools">Tools</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-th-large" aria-hidden="true"></i>
+</span>
+          <span class="dashboard">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-file-text" aria-hidden="true"></i>
+</span>
+          <span class="Backlog">Backlog Remover</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-trophy" aria-hidden="true"></i>
+</span>
+          <span class="Rank">Rank up</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-car" aria-hidden="true"></i>
+
+
+  </span>
+          <span class="Speed">Speed up</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-check" aria-hidden="true"></i>
+
+      </span>
+          <span class="Accuracy">Accuracy up</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-refresh" aria-hidden="true"></i>
+</span>
+          <span class="Revision">Revision</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-files-o" aria-hidden="true"></i>
+</span>
+          <span class="Test">Test Creator</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+</span>
+          <span class="Assignment">Assignment Creator</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-filter" aria-hidden="true"></i>
+</span>
+          <span class="Study">Study Material</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa fa-file-archive-o" aria-hidden="true"></i>
+</span>
+          <span class="Study">Formula Sheet</span>
+        </a>
+      </li>
+      <li>
+
+    </ul>
+  </div>
+
+
+  <div class="main">
+
+
+
+    <nav class="AT">
+          <div class="drop-btn">
+            Activity <span class="fas fa-caret-down"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;Tool Guide <span class="fas fa-caret-down"></span>
+          </div>
+
+    </nav>
+
+    <nav class="searchbar">
+      <form>
+
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+
+    </nav>
+
+
+
+    <nav class="profile">
+          <div class="drop-btn"><span class="fa fa-bell" aria-hidden="true"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="fa fa-user" aria-hidden="true"></span>&nbsp;&nbsp;
+
+             <span class="fas fa-caret-down"></span>
+          </div>
+
+    </nav>
+
+
+<br>
+<br>
+
+
+<div id="curve_chart" style="width: 900px; height: 500px"></div>
+
+
+
+  </div>
+
+</body>
+</html>
